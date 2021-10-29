@@ -1,11 +1,9 @@
 import os
 import pytest
-from dotenv import load_dotenv
 
 from vkinfo.vk_api import VkApiSess
 from vkinfo.config import Default
 
-load_dotenv()
 
 @pytest.fixture
 def vk():

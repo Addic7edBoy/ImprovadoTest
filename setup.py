@@ -1,7 +1,7 @@
 from setuptools import find_packages
 from setuptools import setup
 
-VERSION = '0.1.1'
+VERSION = '0.1.2'
 
 with open("README.md", "r", encoding="utf-8") as fh:
     long_description = fh.read()
@@ -15,11 +15,11 @@ setup(
     long_description_content_type="text/markdown",
     version=VERSION,
     install_requires=[
-        'requests',
-        'pandas',
-        'webbrowser',
-        'dotenv',
-        'httpretty'
+        'requests>=2.26.0',
+        'pandas>=1.3.3',
+        'six>=1.16.0',
+        'httpretty>=1.1.4',
+        'responses>=0.14.0'
     ],
     classifiers=[
         "Programming Language :: Python :: 3.8",
